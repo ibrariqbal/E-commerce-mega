@@ -1,11 +1,33 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Logo from '../../assets/Images/logo.jpg'
 import '../../index.css'
-export default function Header() {
+import Search from '../Search/Search'
+import Button from '@mui/material/Button';
+import Badge from '@mui/material/Badge';
+import { styled } from '@mui/material/styles';
+import IconButton from '@mui/material/IconButton';
+import { MdShoppingCart } from "react-icons/md";
+import { IoMdGitCompare } from "react-icons/io";
+import { FaRegHeart } from "react-icons/fa6";
+import Tooltip from '@mui/material/Tooltip';
+
+
+
+ export default function Header() {
+  const StyledBadge = styled(Badge)(({ theme }) => ({
+  '& .MuiBadge-badge': {
+    right: -3,
+    top: 13,
+    border: `2px solid ${(theme.vars ?? theme).palette.background.paper}`,
+    padding: '0 4px',
+  },
+}));
+ 
   return (
     <>
          <header>
-             <div className='top-strip py-2 border-t-1 border-t-[1px] border-gray-250 border-b-[1px] '>
+             <div className='top-strip py-2 border-t-1 border-t-[1px] border-gray-250 border-b-[1px]'>
                 <div className='container' >
                     <div className='flex items-center justify-between '>
                            <div className='col1 w-[50%]'>
@@ -26,9 +48,54 @@ export default function Header() {
                 </div>
              </div>
          </header>
- 
-      
 
+         <div class="header py-3">
+
+             <div className="container flex justify-between items-center ">
+              <div className='col1 w-[25%]'>
+                <Link to='/'><img src={Logo} alt=""/></Link>
+              </div>
+              <div className='col1 w-[45%]'>
+                <Search/>
+              </div>
+
+              <div className='col3 w-[30%] flex items-center pl-5'>
+                <ul className='flex items-center justify-end gap-3 w-full'>
+                     <li className='list-none'>
+                       <Link className="link transition text-[15px] font-[500] " to='/login'>Login</Link> | &nbsp;
+                       <Link className="link transition text-[15px] font-[500] " to='/register'>Register</Link> </li>
+                          <li>
+                          <Tooltip title="Compare">
+                          <IconButton aria-label="cart">
+                         <StyledBadge badgeContent={4} color="secondary">
+                         <IoMdGitCompare />
+                         </StyledBadge>
+                          </IconButton>
+                          </Tooltip>
+                    </li>
+                          <li>
+                            <Tooltip title="Wishlist">
+                          <IconButton aria-label="cart">
+                         <StyledBadge badgeContent={4} color="secondary">
+                         <MdShoppingCart />
+                         </StyledBadge>
+                          </IconButton>
+                          </Tooltip>
+                    </li>
+                          <li>
+                           <Tooltip title="Cart"> 
+                          <IconButton aria-label="cart">
+                         <StyledBadge badgeContent={4} color="secondary">
+                         <FaRegHeart />
+                         </StyledBadge>
+                         </IconButton>
+                         </Tooltip> 
+                    </li>
+                </ul>
+                
+              </div>
+             </div>
+         </div>
     </>
   )
 }

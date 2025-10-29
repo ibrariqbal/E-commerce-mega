@@ -11,6 +11,7 @@ import { MdShoppingCart } from "react-icons/md";
 import { IoMdGitCompare } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa6";
 import Tooltip from '@mui/material/Tooltip';
+import Navbar from '../Navigation/Navbar'
 
 
 
@@ -26,7 +27,7 @@ import Tooltip from '@mui/material/Tooltip';
  
   return (
     <>
-         <header>
+         <header className='bg-white'>
              <div className='top-strip py-2 border-t-1 border-t-[1px] border-gray-250 border-b-[1px]'>
                 <div className='container' >
                     <div className='flex items-center justify-between '>
@@ -47,9 +48,8 @@ import Tooltip from '@mui/material/Tooltip';
                     </div>
                 </div>
              </div>
-         </header>
-
-         <div class="header py-3">
+     
+         <div class="header py-4 border-gray-250 border-b-[1px] ">
 
              <div className="container flex justify-between items-center ">
               <div className='col1 w-[25%]'>
@@ -91,11 +91,12 @@ import Tooltip from '@mui/material/Tooltip';
                          </IconButton>
                          </Tooltip> 
                     </li>
-                </ul>
-                
+                </ul> 
               </div>
              </div>
          </div>
+         <Navbar/>
+   </header>
     </>
   )
 }

@@ -6,20 +6,21 @@
 
 body{
    font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-}
-.container{
-  width: 90%;
-  margin: auto;
-}
- 
-.bg-org{
-  background: #ff5252;
-}
-.link:hover{
-  color:  #ff5252;
-}
+   font-optical-sizing: auto;
+   background: #f5f0f0;
+   color:black
 
-.MuiBadge-badge{
-  background-color: #ff5252!important;
 }
+.container{ width: 95%; margin: auto;}
+ 
+.bg-org{background: #ff5252;}
+
+.link:hover{color:  #ff5252;}
+
+.MuiBadge-badge{ background-color: #ff5252!important;}
+
+nav ul button{text-transform:capitalize !important; color: rgba(0,0,0,0.7)!important}
+nav ul button:hover{text-transform:capitalize !important; color:#ff5252!important; background-color: none !important;}
+
+.css-1orsvah-MuiTypography-root-MuiLink-root{text-decoration: none !important;}
+.css-1orsvah-MuiTypography-root-MuiLink-root:hover{color:#ff5252!important;;}

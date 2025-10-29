@@ -167,7 +167,6 @@ export default function Categorypannel({ isopen, toggleDrawer }) {
                  Cosmetics
                 </Button>
               </Link>
-
                    <Link className='w-full' to='/accessories'>
                 <Button className='w-full !text-left !justify-start !px-3 !text-[rgba(0,0,0,0.8)]'>
                  Accessories
@@ -214,14 +213,11 @@ export default function Categorypannel({ isopen, toggleDrawer }) {
                  Purese
                 </Button>
               </Link>
-                  
-
               </div>
         </ul>
       </div>
     </Box>
   );
-
   return (
     <>
       <Drawer

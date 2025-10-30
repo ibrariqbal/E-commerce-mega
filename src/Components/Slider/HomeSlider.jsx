@@ -10,14 +10,14 @@ import Banner4 from '../../assets/Images/Banner4.jpg'
 export default function HomeSlider() {
   return (
     <>
-
+   <div className='homeSliders'>
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide><img className='w-full rounded-lg' src={Banner1} alt=""/></SwiperSlide>
         <SwiperSlide><img className='w-full rounded-lg' src={Banner2} alt=""/></SwiperSlide>
         <SwiperSlide><img className='w-full rounded-lg' src={Banner3} alt=""/></SwiperSlide>
         <SwiperSlide><img className='w-full rounded-lg' src={Banner4} alt=""/></SwiperSlide>
       </Swiper>
- 
+ </div>
      </>
   )
 }

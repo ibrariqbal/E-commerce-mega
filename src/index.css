@@ -24,29 +24,10 @@ nav ul button:hover{text-transform:capitalize !important; color:#ff5252!importan
 
 .css-1orsvah-MuiTypography-root-MuiLink-root{text-decoration: none !important;}
 .css-1orsvah-MuiTypography-root-MuiLink-root:hover{color:#ff5252!important;;}
-
-/* .homeSlider{overflow:inherit !important;}
-.homeSlider .swiper-button-prev,.homeSlider .swiper-button-next {color: black !important; font-weight:bold !important;  width: 30px !important;height: 20px !important; min-width: 20px !important;
-background-color: rgba(0, 0, 0, 0.6) !important;
-  color: #fff !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-in-out !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
-.homeSlider .swiper-button-prev::after,.homeSlider .swiper-button-next::after {font-size: 10px !important;}
-.homeSlider .swiper-button-prev{left:-10px !important} 
-.homeSlider .swiper-button-next{right:-10px !important}  */
-
-
 .homeSliders .swiper-button-prev,.homeSliders .swiper-button-next {color: white !important; font-weight:bold !important;  width: 40px !important;height: 40px !important; min-width: 20px !important;}
 .homeSliders .swiper-button-prev::after,.homeSliders .swiper-button-next::after {font-size: 10px !important;}
 
- 
-
-/* Waste */
-
- .homeSlider {
+  .homeSlider {
   overflow: inherit !important;
    
 }
@@ -54,7 +35,7 @@ background-color: rgba(0, 0, 0, 0.6) !important;
 .homeSlider .swiper-button-prev,
 .homeSlider .swiper-button-next {
   padding: 5px !important;
-  width: 25px !important; /* arrow ke liye proper jagah */
+  width: 25px !important; 
   height: 25px !important;
   background: #ffffff !important;
   color: black !important;
@@ -69,7 +50,7 @@ background-color: rgba(0, 0, 0, 0.6) !important;
 
 .homeSlider .swiper-button-prev::after,
 .homeSlider .swiper-button-next::after {
-  font-size: 19px !important; /* clear visible arrow */
+  font-size: 19px !important;  
   font-weight: 900 !important;
 }
 
@@ -90,3 +71,10 @@ background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .homeSlider img:hover{transition: all !important; transform: scale(1.1) !important;}
+
+::-webkit-scrollbar{width: 8px !important; height: 8px !important;}
+::-webkit-scrollbar-thumb{background-color: #cccc !important;}
+::-webkit-scrollbar-track{background-color: white!important;}
+
+.css-1usuzwp-MuiButtonBase-root-MuiTab-root.Mui-selected { color : #ff5252 !important;}
+.css-1qltlow-MuiTabs-indicator {background-color: #ff5252 !important;}

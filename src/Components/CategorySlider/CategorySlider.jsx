@@ -2,7 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
- import { Navigation } from 'swiper/modules';
+ import { Navigation, Autoplay } from 'swiper/modules';
 import SmartTablet from '../../assets/Images/HomeSlider-Images/smarttablet.jpeg'
 import LeatherWatch from '../../assets/Images/HomeSlider-Images/leatherwatch.png'
 import Rollingdiamond from '../../assets/Images/HomeSlider-Images/Rollingdiamond.jpg'
@@ -11,22 +11,27 @@ import Purse from '../../assets/Images/HomeSlider-Images/Purse.jpeg'
 import Furniture from '../../assets/Images/HomeSlider-Images/furniture.png'
 import Comsetics from '../../assets/Images/HomeSlider-Images/Cosmetics.png'
 import Sunglasses from '../../assets/Images/HomeSlider-Images/sunglasses.png'
-import 'swiper/css';
 import 'swiper/css/navigation';
 import { Link } from 'react-router-dom';
 export default function CategorySlider() {
   return (
     <>
-    <div className='homeSlider py-4'>
+    <div className='homeSlider pt-4 py-8'>
       <div className='container'>
        <Swiper 
+
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+
        navigation={true}  
         slidesPerView={7}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
-        modules={[Navigation]}
+        modules={[Navigation,Autoplay]}
         className="mySwiper "
       >
         <SwiperSlide>

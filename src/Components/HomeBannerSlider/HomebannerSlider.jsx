@@ -42,13 +42,9 @@ export default function HomebannerSlider(props) {
         <SwiperSlide>
            <BannerBox img={HomeBanner4} Link='/'/>
         </SwiperSlide>
-        <SwiperSlide>
-           <BannerBox img={HomeBanner4} Link='/'/>
-        </SwiperSlide>
         </Swiper>
          </section>
-
-
+         
     </>
   )
 }

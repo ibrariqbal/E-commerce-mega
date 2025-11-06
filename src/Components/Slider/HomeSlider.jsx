@@ -17,7 +17,7 @@ export default function HomeSlider() {
           delay: 2500,
           disableOnInteraction: false,
         }} navigation={true} modules={[Navigation,Autoplay]} className="mySwiper">
-        <SwiperSlide><img className='w-full rounded-lg' src={Banner1} alt=""/></SwiperSlide>
+        <SwiperSlide><img className='w-full  rounded-lg' src={Banner1} alt=""/></SwiperSlide>
         <SwiperSlide><img className='w-full rounded-lg' src={Banner2} alt=""/></SwiperSlide>
         <SwiperSlide><img className='w-full rounded-lg' src={Banner3} alt=""/></SwiperSlide>
         <SwiperSlide><img className='w-full rounded-lg' src={Banner4} alt=""/></SwiperSlide>

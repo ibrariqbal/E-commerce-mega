@@ -27,7 +27,7 @@ export default function Navbar() {
 
           <div className='col2 w-[60%]'>
             <ul className='flex gap-5 items-center nav'>
-              <li><Link to='/home'><Button className='link transition font-[500]'>Home</Button></Link></li>
+              <li><Link to='/'><Button className='link transition font-[500]'>Home</Button></Link></li>
               <li className='relative'><Link to='/fashion'><Button className='link transition font-[500] hover:opacity-[1] visible'>Fashion</Button></Link>
             
             

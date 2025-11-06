@@ -11,6 +11,7 @@ export default function Home() {
       <CategorySlider/>
       <Section0/>
       <Section1/>
+  
       
     </>
   )

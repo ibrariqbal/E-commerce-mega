@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { LoginForm } from './Components/SignupForm/Login'
 import {SignUpForm} from './Components/SignupForm/Register'
+import Footer  from './Components/Footer/Footer'
 
 
 
@@ -34,6 +35,7 @@ function App() {
         draggable
         theme="colored"
       />
+      <Footer/>
     </Router>
     
     

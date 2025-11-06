@@ -6,6 +6,8 @@ import Home from './Components/Home/Home'
 import Cart from './Components/Cart/Cart'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { LoginForm } from './Components/SignupForm/Login'
+import {SignUpForm} from './Components/SignupForm/Register'
 
 
 
@@ -17,7 +19,10 @@ function App() {
        <Header/>
        <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/home' element={<Home/>}/>
         <Route path='/addtocart' element={<Cart/>}/>
+        <Route path='/login' element={<LoginForm/>}/>
+        <Route path='/signupform' element={<SignUpForm/>}/>
        </Routes>
         <ToastContainer
         position="top-right"

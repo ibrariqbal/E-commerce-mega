@@ -22,7 +22,7 @@ export default function Section1() {
                </div>
               </div>
            </div>
-           <HomebannerSlider item={2}/>
+           <HomebannerSlider item={3}/>
         </section>
 
      </>

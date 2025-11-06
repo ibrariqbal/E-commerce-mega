@@ -77,7 +77,7 @@ export default function Header() {
               <ul className='flex items-center gap-3'>
                 <li>
                   <Link className='text-[15px] font-[500]' to='/login'>Login</Link> |&nbsp;
-                  <Link className='text-[15px] font-[500]' to='/register'>Register</Link>
+                  <Link className='text-[15px] font-[500]' to='/signupform'>Register</Link>
                 </li>
 
                 {/* Compare */}

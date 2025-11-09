@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { LoginForm } from './Components/SignupForm/Login'
 import {SignUpForm} from './Components/SignupForm/Register'
 import Footer  from './Components/Footer/Footer'
+import Fashion from './Components/NavPaneel/Fashion/Fashion'
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/addtocart' element={<Cart/>}/>
         <Route path='/login' element={<LoginForm/>}/>
         <Route path='/signupform' element={<SignUpForm/>}/>
+        <Route path='/fashion' element={<Fashion/>}/>
        </Routes>
         <ToastContainer
         position="top-right"
